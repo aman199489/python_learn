@@ -42,5 +42,27 @@ print("\n=========================================\n");
 
 
 '''
-#
+# 元组
+
+* 元组内元素不可修改，可以用 + 串联
+* 元组中的元素不予许删除，但可用 del 删除整个元组
+* 运算符 * 复制
+* in 元素是否存在
 '''
+
+tuple_a = ();   # 创建空元组
+tuple_a = (50,);    # 创建一个元素的元组
+print(tuple_a, type(tuple_a), len(tuple_a));
+del tuple_a;
+
+tuple_a = ('TEST',) * 4;    # 复制4次
+print(tuple_a, type(tuple_a), len(tuple_a));
+
+# 内置函数
+tuple_b = (1, 2, 3, 4);
+print("元组tuple_b中最大的元素是", max(tuple_b));
+print("元组tuple_b中最小的元素是", min(tuple_b));
+list_c = [1, 2, 3, 4, 5];
+tuple_c = tuple(list_c);    # 列表转为元组
+print(tuple_c, type(tuple_c), len(tuple_c));
+print("\n=========================================\n");
